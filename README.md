@@ -25,17 +25,17 @@ INSTRUCTIONS TO COMPILE AND GET THE GAME RUNNING SUCCESSFULLY
 
 WORDS FILE
 
-This program uses a binary file called "words.dat" that contains the words that the player has to guess
-In order for this game to run correctly, the file "words.dat" must be in the same directory as the executable file after compilation
+This program uses a binary file called "words.dat" that contains the words that the player has to guess.
+In order for this game to run correctly, the file "words.dat" must be in the same directory as the executable file after compilation.
 
 COMPILING INSTRUCTIONS
 
-1.	You need to compile this game with a compiler that allows compilation under C++11 standard or more recent
+1.	You need to compile this game with a compiler that allows compilation under C++11 standard or more recent.
 
-2.	"Main.cpp", "Hangman.h", "Hangman.cpp", and "Word.h" must all be in the same directory before compilation
+2.	"Main.cpp", "Hangman.h", "Hangman.cpp", and "Word.h" must all be in the same directory before compilation.
 
-3.	Compile Main.cpp and Hangman.cpp into an executable
+3.	Compile Main.cpp and Hangman.cpp into an executable.
 
-4.	Make sure that the executable just created is in the same directory as the "words.dat" file
+4.	Make sure that the executable just created is in the same directory as the "words.dat" file.
 
-5.	Run program
+5.	Run program.
