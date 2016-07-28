@@ -16,8 +16,8 @@
 
     Author contact: dakota.barron@yahoo.com
 
-This program is a portable, console-based Hangman game written in C++11
-It was designed to be highly portable and should compile without error on any operating system with a C++11 standard (or later version) compiler
+This program is a portable, console-based Hangman game written in C++11.
+It was designed to be highly portable and should compile without error on any operating system with a C++11 standard (or later version) compiler.
 
 For issues/errors/bugs/questions/comments please contact: dakota.barron@yahoo.com
 
