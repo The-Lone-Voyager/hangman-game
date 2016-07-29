@@ -19,17 +19,7 @@
 
 // This is the file that contains main() and that actually runs the game
 
-// COMPILE INSTRUCTIONS: make sure Main.cpp, Hangman.h, Hangman.cpp,
-//                       and Word.h are in the same directory, then compile
-//                       Main.cpp and Hangman.cpp into an .exe
-//                       Please note that you must compile this program in a compiler that
-//                       implements or has option to compile as C++11 standard.
-
-// NOTE: some complilers will issue warning messages for conversion and also
-// unrecognized escape sequences used to draw the hangman. Just ignore these warnings.
-
-// In order to run the game successfully, the "words.dat" file
-// must be in the same directory as the .exe file created during compilation
+// See README for compile instructions
 
 #include <iostream>
 #include <string>
