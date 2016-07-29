@@ -58,13 +58,13 @@ int main()
       letters.insert( make_pair( c, false ) );
    }
 
-   const size_t SIZE = 123356;
+   const size_t SIZE = 123357; // number of words in the "words.dat" file
 
    array< bool, SIZE > wordsChosen = {};
 
 
    default_random_engine engine( static_cast< unsigned int >( time( nullptr ) ) );
-   uniform_int_distribution< unsigned int > randomInt( 0, ( SIZE ) );
+   uniform_int_distribution< unsigned int > randomInt( 0, ( SIZE - 1 ) );
 
    string word;
 
