@@ -112,7 +112,7 @@ int main()
                cout << "_ ";
          }
 
-         cout << "\n\nYour guess: ";
+         cout << "\n\nPlease enter a character (one character per guess, immediately followed by RETURN): ";
          int guess;
          guess = cin.get();
          
@@ -276,7 +276,7 @@ void start() // this function just shows the copyright notice when the game firs
    cout << "Copyright (C) 2016 Dakota Barron\n\n"
       << "This program comes with ABSOLUTELY NO WARRANTY;\n"
       << "This is free software, and you are welcome to redistribute it\n"
-      << "under certain conditions; See the COPYING file included\n"
+      << "under certain conditions; See the LICENSE file included\n"
       << "with this software or go to <https://www.gnu.org/licenses/gpl.txt> for details." << endl;
 
    cout << "\nPress enter to continue...";
