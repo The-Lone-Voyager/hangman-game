@@ -266,7 +266,7 @@ int main()
 
       }
 
-   } while ( response == 'y' );
+   } while ( response == 'y' || response == 'Y' );
 
    return 0;
 }
