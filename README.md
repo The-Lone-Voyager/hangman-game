@@ -16,7 +16,8 @@
 
     Author contact: dakota.barron@yahoo.com
 
-No source files are in the master branch, please select either the Windows or Un*x branch depending on your OS.
+No source files are in the master branch, please select either the windows or unix branch depending on your OS.
+Linux and MacOS uses the unix branch.
 
 This program is a portable, console-based Hangman game written in C++11.
 It was designed to be highly portable and should compile without error on any operating system with a C++11 standard (or later version) compiler.
