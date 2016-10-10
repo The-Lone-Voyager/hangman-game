@@ -16,6 +16,8 @@
 
     Author contact: dakota.barron@yahoo.com
 
+No source files are in the master branch, please select either the Windows or Un*x branch depending on your OS.
+
 This program is a portable, console-based Hangman game written in C++11.
 It was designed to be highly portable and should compile without error on any operating system with a C++11 standard (or later version) compiler.
 
