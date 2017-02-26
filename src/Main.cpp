@@ -14,7 +14,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/gpl.txt>.
 
-    Author contact: dakota.barron@yahoo.com */
+    Author contact: dakotabarron52@gmail.com */
 
 
 // This is the file that contains main() and that actually runs the game
@@ -295,6 +295,7 @@ void start() // this function just shows the copyright notice when the game firs
 
 void clear()
 {
-   system("clear");
+   for (int i = 0; i < 100; ++i) // most portable way to clear the screen
+      cout << endl;              // not dependent on system calls
    return;
 }
