@@ -42,7 +42,7 @@ int main()
    clear();
    start();
 
-   ifstream inWord( "/usr/bin/words.dat", ios::in | ios::binary );
+   ifstream inWord( "words.dat", ios::in | ios::binary );
 
    if ( !inWord )
    {
@@ -97,7 +97,7 @@ int main()
       while ( status == CONTINUE )
       {
          clear();
-	 cout << "Copyright (C) 2016 - Dakota Barron" << endl << endl;
+	      cout << "Copyright (C) 2016 - Dakota Barron" << endl << endl;
          hangman.draw();
          cout << "\nGuess the word: ";
          
