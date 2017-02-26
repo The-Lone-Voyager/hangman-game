@@ -14,11 +14,11 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/gpl.txt>.
 
-    Author contact: dakota.barron@yahoo.com */
+    Author contact: dakotabarron52@gmail.com */
 
 
 // This class is used to represent the hangman figure
-// that is drawn before and after every player move
+// that is drawn before every player move
 
 #ifndef HANGMAN_H
 #define HANGMAN_H

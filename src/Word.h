@@ -14,7 +14,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/gpl.txt>.
 
-    Author contact: dakota.barron@yahoo.com */
+    Author contact: dakotabarron52@gmail.com */
 
 
 // This class is used solely to read in a word
