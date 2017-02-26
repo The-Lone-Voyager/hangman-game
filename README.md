@@ -14,15 +14,12 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/gpl.txt>.
 
-    Author contact: dakota.barron@yahoo.com
-
-No source files are in the master branch, please select either the windows or unix branch depending on your OS.
-Linux and MacOS uses the unix branch.
+    Author contact: dakotabarron52@gmail.com
 
 This program is a portable, console-based Hangman game written in C++11.
-It was designed to be highly portable and should compile without error on any operating system with a C++11 standard (or later version) compiler.
+It was designed to be highly portable and should compile without error on any operating system for which there is a C++11 standard (or later version) compiler.
 
-For issues/errors/bugs/questions/comments please contact: dakota.barron@yahoo.com
+For issues/errors/bugs/questions/comments please contact: dakotabarron52@gmail.com
 
 INSTRUCTIONS TO COMPILE AND GET THE GAME RUNNING SUCCESSFULLY
 
@@ -33,7 +30,7 @@ In order for this game to run correctly, the file "words.dat" must be in the sam
 
 COMPILING INSTRUCTIONS
 
-1.	You need to compile this game with a compiler that allows compilation under C++11 standard or more recent.
+1.	You need to compile this game with a compiler that allows compilation under C++11 standard or later version.
 
 2.	"Main.cpp", "Hangman.h", "Hangman.cpp", and "Word.h" must all be in the same directory before compilation.
 
@@ -41,4 +38,4 @@ COMPILING INSTRUCTIONS
 
 4.	Make sure that the executable just created is in the same directory as the "words.dat" file.
 
-5.	Run program.
+5.	Run the executable.
