@@ -46,7 +46,8 @@ int main()
 
    if ( !inWord )
    {
-      cout << "\n\nUnable to locate the words file called \"words.dat\"" << endl;
+      clear();
+      cout << "Unable to locate the words file called \"words.dat\"" << endl;
       cout << "Please check the program directory and make sure that the \"words.dat\" file is in there" << endl;
       return 0;
    }
