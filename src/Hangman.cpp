@@ -75,8 +75,8 @@ void Hangman::draw() const
       cout << setw( 19 ) << static_cast< unsigned char >( 124 ) << endl;
       cout << setw( 19 ) << static_cast< unsigned char >( 124 ) << endl;
       cout << setw( 19 ) << static_cast< unsigned char >( 124 ) << endl;
-	  cout << setw(19) << static_cast< unsigned char >(124) << endl;
-	  cout << setw(19) << static_cast<unsigned char>(124) << endl << endl;
+      cout << setw(19) << static_cast< unsigned char >(124) << endl;
+      cout << setw(19) << static_cast<unsigned char>(124) << endl << endl;
    }
 
    // draw head on gallows pole
