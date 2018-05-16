@@ -42,7 +42,11 @@ public:
    }
 
 private:
-   char w[ 11 ];
+  
+  // max number of letters in any word
+  static const int MAX_SIZE = 11;
+
+  char w[ MAX_SIZE ];
 };
 
 #endif

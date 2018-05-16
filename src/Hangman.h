@@ -12,7 +12,8 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <https://www.gnu.org/licenses/gpl.txt>.
+    along with this program.  
+    If not, see <https://www.gnu.org/licenses/gpl.txt>.
 
     Author contact: dakotabarron52@gmail.com */
 
@@ -32,7 +33,7 @@ public:
    void addPart(); // add another part to the hangman;
 
 private:
-   int parts;
+   int parts; // number of body parts the hangman currently has
 };
 
 #endif

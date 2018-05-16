@@ -12,12 +12,16 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <https://www.gnu.org/licenses/gpl.txt>.
+    along with this program. 
+    If not, see <https://www.gnu.org/licenses/gpl.txt>.
 
     Author contact: dakotabarron52@gmail.com */
 
 
-// Here are defined the member functions of the Hangman class
+/* Here are defined the member functions of the Hangman class
+This class represents the hangman that appears on the screen,
+including the gallows pole.
+*/
 
 #include <iostream>
 #include <iomanip>
@@ -31,18 +35,29 @@ Hangman::Hangman( int p )
    // empty constructor body
 }
 
+/*
+return how many body parts the hangman currently has. for example, if only
+the head is showing, this will return 1; if the head and upper body
+are showing, this will return 2; etc...
+*/
 int Hangman::getParts() const
 {
    return parts;
 }
 
+// adds a body part to the hangman
 void Hangman::addPart()
 {
    ++parts;
 }
 
+/* draws the hangman with the current number of body parts.
+ASCII characters are used to draw. we static cast the integer representing
+an ASCII character to an unsigned char.
+*/
 void Hangman::draw() const
 {
+   // only draw gallows pole
    if ( parts == 0 )
    {
       cout << setw( 19 );
@@ -53,7 +68,10 @@ void Hangman::draw() const
 	  cout << endl;
 
 	  cout << setw(19) << static_cast<unsigned char>(124);
+
+	  // part head hangs on
 	  cout << setw(10) << static_cast<unsigned char>(124) << endl;
+
       cout << setw( 19 ) << static_cast< unsigned char >( 124 ) << endl;
       cout << setw( 19 ) << static_cast< unsigned char >( 124 ) << endl;
       cout << setw( 19 ) << static_cast< unsigned char >( 124 ) << endl;
@@ -61,6 +79,7 @@ void Hangman::draw() const
 	  cout << setw(19) << static_cast<unsigned char>(124) << endl << endl;
    }
 
+   // draw head on gallows pole
    else if ( parts == 1 )
    {
 	   cout << setw(19);
@@ -71,9 +90,15 @@ void Hangman::draw() const
 	   cout << endl;
 
 	   cout << setw(19) << static_cast<unsigned char>(124);
-	   cout << setw(10) << static_cast<unsigned char>(124) << endl;		// part head hangs on
+
+	   // part head hangs on
+	   cout << setw(10) << static_cast<unsigned char>(124) << endl;
+
 	   cout << setw(19) << static_cast< unsigned char >(124);
+
+	   // head
 	   cout << setw(10) << "O" << endl;
+
 	   cout << setw(19) << static_cast< unsigned char >(124) << endl;
 	   cout << setw(19) << static_cast< unsigned char >(124) << endl;
 	   cout << setw(19) << static_cast< unsigned char >(124) << endl;
@@ -91,11 +116,20 @@ void Hangman::draw() const
 	   cout << endl;
 
 	   cout << setw(19) << static_cast<unsigned char>(124);
-	   cout << setw(10) << static_cast<unsigned char>(124) << endl;			// part head hangs on
+
+	   // part head hangs on
+	   cout << setw(10) << static_cast<unsigned char>(124) << endl;
+
 	   cout << setw(19) << static_cast< unsigned char >(124);
+
+	   // head
 	   cout << setw(10) << "O" << endl;
+
 	   cout << setw(19) << static_cast< unsigned char >(124);
-	   cout << setw(10) << static_cast<unsigned char>(124) << endl;			// body directly below head
+
+	   // body directly below head
+	   cout << setw(10) << static_cast<unsigned char>(124) << endl;
+
 	   cout << setw(19) << static_cast< unsigned char >(124) << endl;
 	   cout << setw(19) << static_cast< unsigned char >(124) << endl;
 	   cout << setw(19) << static_cast<unsigned char>(124) << endl << endl;
@@ -111,13 +145,25 @@ void Hangman::draw() const
 	   cout << endl;
 
 	   cout << setw(19) << static_cast<unsigned char>(124);
-	   cout << setw(10) << static_cast<unsigned char>(124) << endl;			// part head hangs on
+
+	   // part head hangs on
+	   cout << setw(10) << static_cast<unsigned char>(124) << endl;
+
 	   cout << setw(19) << static_cast< unsigned char >(124);
+
+	   // head
 	   cout << setw(10) << "O" << endl;
+
 	   cout << setw(19) << static_cast< unsigned char >(124);
-	   cout << setw(10) << static_cast<unsigned char>(124) << endl;			// body directly below head
+
+	   // body directly below head
+	   cout << setw(10) << static_cast<unsigned char>(124) << endl;
+
 	   cout << setw(19) << static_cast<unsigned char>(124);
-	   cout << setw(10) << static_cast<unsigned char>(124) << endl;			// lower piece of body
+
+	   // lower piece of body
+	   cout << setw(10) << static_cast<unsigned char>(124) << endl;
+
 	   cout << setw(19) << static_cast< unsigned char >(124) << endl;
 	   cout << setw(19) << static_cast<unsigned char>(124) << endl << endl;
    }
@@ -132,15 +178,30 @@ void Hangman::draw() const
 	   cout << endl;
 
 	   cout << setw(19) << static_cast<unsigned char>(124);
-	   cout << setw(10) << static_cast<unsigned char>(124) << endl;			// part head hangs on
+
+	   // part head hangs on
+	   cout << setw(10) << static_cast<unsigned char>(124) << endl;
+
 	   cout << setw(19) << static_cast< unsigned char >(124);
+
+	   // head
 	   cout << setw(10) << "O" << endl;
+
 	   cout << setw(19) << static_cast< unsigned char >(124);
-	   cout << setw(10) << static_cast<unsigned char>(124) << endl;			// body directly below head
+
+	   // body directly below head
+	   cout << setw(10) << static_cast<unsigned char>(124) << endl;
+
 	   cout << setw(19) << static_cast<unsigned char>(124);
-	   cout << setw(10) << static_cast<unsigned char>(124) << endl;			// lower piece of body
+
+	   // lower piece of body
+	   cout << setw(10) << static_cast<unsigned char>(124) << endl;
+
 	   cout << setw(19) << static_cast<unsigned char>(124);
-	   cout << setw(11) << "\\" << endl;									// right leg
+
+	   // right leg
+	   cout << setw(11) << "\\" << endl;
+
 	   cout << setw(19) << static_cast<unsigned char>(124) << endl << endl;
    }
 
@@ -154,16 +215,33 @@ void Hangman::draw() const
 	   cout << endl;
 
 	   cout << setw(19) << static_cast<unsigned char>(124);
-	   cout << setw(10) << static_cast<unsigned char>(124) << endl;			// part head hangs on
+
+	   // part head hangs on
+	   cout << setw(10) << static_cast<unsigned char>(124) << endl;
+
 	   cout << setw(19) << static_cast< unsigned char >(124);
-	   cout << setw(10) << "O" << endl;										// head
+
+	   // head
+	   cout << setw(10) << "O" << endl;
+
 	   cout << setw(19) << static_cast< unsigned char >(124);
-	   cout << setw(10) << static_cast<unsigned char>(124) << endl;			// body directly below head
+
+	   // body directly below head
+	   cout << setw(10) << static_cast<unsigned char>(124) << endl;
+
 	   cout << setw(19) << static_cast<unsigned char>(124);
-	   cout << setw(10) << static_cast<unsigned char>(124) << endl;			// lower piece of body
+
+	   // lower piece of body
+	   cout << setw(10) << static_cast<unsigned char>(124) << endl;
+
 	   cout << setw(19) << static_cast<unsigned char>(124);
-	   cout << setw(9) << "/";												// left leg
-	   cout << setw(2) << "\\" << endl;										// right leg
+
+	   // left leg
+	   cout << setw(9) << "/";
+
+	   // right leg												
+	   cout << setw(2) << "\\" << endl;
+
 	   cout << setw(19) << static_cast<unsigned char>(124) << endl << endl;
    }
 
@@ -177,17 +255,36 @@ void Hangman::draw() const
 	   cout << endl;
 
 	   cout << setw(19) << static_cast<unsigned char>(124);
-	   cout << setw(10) << static_cast<unsigned char>(124) << endl;			// part head hangs on
+
+	   // part head hangs on
+	   cout << setw(10) << static_cast<unsigned char>(124) << endl;
+
 	   cout << setw(19) << static_cast< unsigned char >(124);
-	   cout << setw(10) << "O" << endl;										// head
+
+	   // head
+	   cout << setw(10) << "O" << endl;
+
 	   cout << setw(19) << static_cast< unsigned char >(124);
-	   cout << setw(10) << static_cast<unsigned char>(124);					// body directly below head
-	   cout << "/" << endl;													// right arm
+
+	   // body directly below head
+	   cout << setw(10) << static_cast<unsigned char>(124);
+
+	   // right arm
+	   cout << "/" << endl;
+
 	   cout << setw(19) << static_cast<unsigned char>(124);
-	   cout << setw(10) << static_cast<unsigned char>(124) << endl;			// lower piece of body
+
+	   // lower piece of body
+	   cout << setw(10) << static_cast<unsigned char>(124) << endl;
+
 	   cout << setw(19) << static_cast<unsigned char>(124);
-	   cout << setw(9) << "/";												// left leg
-	   cout << setw(2) << "\\" << endl;										// right leg
+
+	   // left leg
+	   cout << setw(9) << "/";
+
+	   // right leg
+	   cout << setw(2) << "\\" << endl;
+
 	   cout << setw(19) << static_cast<unsigned char>(124) << endl << endl;
    }
 
@@ -201,18 +298,39 @@ void Hangman::draw() const
 	   cout << endl;
 
 	   cout << setw(19) << static_cast<unsigned char>(124);
-	   cout << setw(10) << static_cast<unsigned char>(124) << endl;			// part head hangs on
+
+	   // part head hangs on
+	   cout << setw(10) << static_cast<unsigned char>(124) << endl;
+
 	   cout << setw(19) << static_cast< unsigned char >(124);
-	   cout << setw(10) << "O" << endl;										// head
+
+	   // head
+	   cout << setw(10) << "O" << endl;
+
 	   cout << setw(19) << static_cast< unsigned char >(124);
-	   cout << setw(9) << "\\";												// left arm
-	   cout << static_cast<unsigned char>(124);								// body directly below head
-	   cout << "/" << endl;													// right arm
+
+	   // left arm
+	   cout << setw(9) << "\\";
+
+	   // body directly below head
+	   cout << static_cast<unsigned char>(124);
+
+	   // right arm
+	   cout << "/" << endl;
+
 	   cout << setw(19) << static_cast<unsigned char>(124);
-	   cout << setw(10) << static_cast<unsigned char>(124) << endl;			// lower piece of body
+
+	   // lower piece of body
+	   cout << setw(10) << static_cast<unsigned char>(124) << endl;
+
 	   cout << setw(19) << static_cast<unsigned char>(124);
-	   cout << setw(9) << "/";												// left leg
-	   cout << setw(2) << "\\" << endl;										// right leg
+
+	   // left leg
+	   cout << setw(9) << "/";
+
+	   // right leg
+	   cout << setw(2) << "\\" << endl;
+	   
 	   cout << setw(19) << static_cast<unsigned char>(124) << endl << endl;
    }  
 }
